@@ -74,4 +74,4 @@ php -S localhost:8080
 
 ## 📄 许可证
 
-© 2024 Nexori Studio. All rights reserved.
+© 2026 Nexori Studio. All rights reserved.
