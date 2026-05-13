@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexori Studio - 创意开发者工作室</title>
+    <meta name="description" content="Nexori Studio 是一个专注于创新工具与技术解决方案的开发者工作室">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <canvas id="particle-canvas"></canvas>
+    <div class="grid-overlay"></div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon">◈</span>
+                <span class="logo-text">NEXORI</span>
+            </a>
+            <div class="nav-links">
+                <a href="#about" class="nav-link">关于</a>
+                <a href="#products" class="nav-link">产品</a>
+                <a href="#contact" class="nav-link">联系</a>
+            </div>
+            <button class="mobile-menu-btn" aria-label="菜单">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <div class="hero-badge animate-fade-in">
+                <span class="badge-dot"></span>
+                <span>创意 · 技术 · 未来</span>
+            </div>
+            <h1 class="hero-title animate-fade-in delay-1">
+                <span class="title-main">NEXORI</span>
+                <span class="title-sub">STUDIO</span>
+            </h1>
+            <p class="hero-description animate-fade-in delay-2">
+                探索无限可能，用代码创造未来。<br>
+                我们是专注于创新工具与技术解决方案的开发者工作室。
+            </p>
+            <div class="hero-cta animate-fade-in delay-3">
+                <a href="#products" class="btn btn-primary">
+                    <span>探索产品</span>
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+                <a href="#contact" class="btn btn-secondary">联系我们</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="hex-grid">
+                <div class="hex hex-1"></div>
+                <div class="hex hex-2"></div>
+                <div class="hex hex-3"></div>
+                <div class="hex hex-4"></div>
+                <div class="hex hex-5"></div>
+            </div>
+        </div>
+        <div class="scroll-indicator animate-fade-in delay-4">
+            <span>向下滚动</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="section-header">
+            <span class="section-tag">关于工作室</span>
+            <h2 class="section-title">我们是谁</h2>
+        </div>
+        <div class="about-content">
+            <div class="about-text reveal-on-scroll">
+                <p class="about-lead">
+                    Nexori Studio 诞生于对技术的热爱与对创新的追求。
+                </p>
+                <p class="about-detail">
+                    我们相信，优秀的工具能够改变人们的工作方式。通过将设计美学与前沿技术相结合，我们致力于打造简洁而强大的产品，让复杂的技术变得易于触及。
+                </p>
+                <div class="about-values">
+                    <div class="value-card reveal-on-scroll">
+                        <div class="value-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                            </svg>
+                        </div>
+                        <h3>创新驱动</h3>
+                        <p>突破边界，探索技术的无限可能</p>
+                    </div>
+                    <div class="value-card reveal-on-scroll delay-1">
+                        <div class="value-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M12 6v6l4 2"/>
+                            </svg>
+                        </div>
+                        <h3>品质优先</h3>
+                        <p>每一行代码都追求卓越与精致</p>
+                    </div>
+                    <div class="value-card reveal-on-scroll delay-2">
+                        <div class="value-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
+                            </svg>
+                        </div>
+                        <h3>用户为本</h3>
+                        <p>专注于解决真实痛点，提升使用体验</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-visual reveal-on-scroll">
+                <div class="code-preview">
+                    <div class="code-header">
+                        <div class="code-dots">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <span class="code-title">nexori-core.ts</span>
+                    </div>
+                    <pre class="code-content"><code><span class="keyword">const</span> <span class="variable">nexori</span> = {
+  <span class="property">mission</span>: <span class="string">"Empower through code"</span>,
+  <span class="property">focus</span>: [<span class="string">"innovation"</span>, <span class="string">"quality"</span>],
+  <span class="property">spirit</span>: <span class="string">"Think Different"</span>
+};</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="products">
+        <div class="section-header">
+            <span class="section-tag">我们的产品</span>
+            <h2 class="section-title">精选项目</h2>
+        </div>
+        <div class="products-grid">
+            <div class="product-card reveal-on-scroll">
+                <div class="product-image">
+                    <div class="product-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M9 12l2 2 4-4"/>
+                            <path d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9c2.12 0 4.07.74 5.62 1.98"/>
+                            <path d="M15 3h6v6M18.5 5.5L21 3"/>
+                        </svg>
+                    </div>
+                    <div class="product-glow"></div>
+                </div>
+                <div class="product-content">
+                    <div class="product-tags">
+                        <span class="tag">TypeScript</span>
+                        <span class="tag">React</span>
+                        <span class="tag">Node.js</span>
+                    </div>
+                    <h3 class="product-name">Voting System</h3>
+                    <p class="product-description">
+                        一个现代化的投票系统，支持多种投票模式、实时结果统计与可视化展示。适用于团队决策、社区调研等场景。
+                    </p>
+                    <div class="product-meta">
+                        <span class="meta-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                            </svg>
+                            <span>nexori-studio</span>
+                        </span>
+                    </div>
+                    <a href="https://github.com/nexori-studio/voting-system" target="_blank" rel="noopener" class="product-link">
+                        <span>查看 GitHub</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                            <polyline points="15 3 21 3 21 9"/>
+                            <line x1="10" y1="14" x2="21" y2="3"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="product-card coming-soon reveal-on-scroll delay-1">
+                <div class="product-image">
+                    <div class="product-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="3"/>
+                            <path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/>
+                        </svg>
+                    </div>
+                    <div class="product-glow"></div>
+                </div>
+                <div class="product-content">
+                    <div class="product-tags">
+                        <span class="tag">即将推出</span>
+                    </div>
+                    <h3 class="product-name">Project Aurora</h3>
+                    <p class="product-description">
+                        下一代协作工具，正在紧锣密鼓地开发中，敬请期待。
+                    </p>
+                    <div class="product-status">
+                        <span class="status-indicator"></span>
+                        <span>开发中</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="section-header">
+            <span class="section-tag">联系我们</span>
+            <h2 class="section-title">开始合作</h2>
+        </div>
+        <div class="contact-content reveal-on-scroll">
+            <p class="contact-intro">
+                对我们的工作感兴趣？想要讨论合作机会？<br>
+                随时与我们取得联系。
+            </p>
+            <div class="contact-links">
+                <a href="https://github.com/nexori-studio" target="_blank" rel="noopener" class="contact-card">
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                        </svg>
+                    </div>
+                    <div class="contact-info">
+                        <span class="contact-label">GitHub</span>
+                        <span class="contact-value">@nexori-studio</span>
+                    </div>
+                </a>
+                <a href="mailto:hello@nexori.studio" class="contact-card">
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                    </div>
+                    <div class="contact-info">
+                        <span class="contact-label">邮箱</span>
+                        <span class="contact-value">hello@nexori.studio</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <span class="logo-icon">◈</span>
+                    <span class="logo-text">NEXORI</span>
+                </a>
+                <p class="footer-tagline">探索无限可能，用代码创造未来</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>导航</h4>
+                    <a href="#about">关于</a>
+                    <a href="#products">产品</a>
+                    <a href="#contact">联系</a>
+                </div>
+                <div class="footer-column">
+                    <h4>社交</h4>
+                    <a href="https://github.com/nexori-studio" target="_blank" rel="noopener">GitHub</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Nexori Studio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
