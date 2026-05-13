@@ -70,7 +70,7 @@ php -S localhost:8080
 ## 📬 联系我们
 
 - GitHub: [@nexori-studio](https://github.com/nexori-studio)
-- 邮箱: hello@nexori.studio
+- 邮箱: assdou@outlook.com
 
 ## 📄 许可证
 
