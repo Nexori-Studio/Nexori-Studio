@@ -4,7 +4,7 @@ Nexori Studio 官方网站 - 一个专注于创新工具与技术解决方案的
 
 ## 🖥️ 在线预览
 
-访问我们的网站：[https://nexori-studio.github.io](https://nexori-studio.github.io)
+访问我们的网站：[[https://nexori-studio.github.io](https://nexori-studio.github.io)](https://nexori-studio.github.io/Nexori-Studio/)
 
 ## ✨ 特性
 
