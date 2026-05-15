@@ -1066,8 +1066,8 @@ section {
 }
 
 .service-icon {
-    width: 56px;
-    height: 56px;
+    width: 48px;
+    height: 48px;
     margin-bottom: 1.5rem;
     color: var(--accent-primary);
 }
